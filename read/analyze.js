@@ -47,29 +47,6 @@ function draw(v,c,bc,w,h) {
         totalG+=(g /pixels);
         totalB+=(b /pixels);
     }
-    if(totalG>128){
-        totalG=255;
-    }
-    else{
-        totalG=0;
-    }
-    if(lastColor != totalG){
-        count++;
-        if(totalR>128){
-            bin+="1"
-        }
-        else{
-            bin+="0"
-        }
-
-        if(totalB>128){
-            bin+="1"
-        }
-        else{
-            bin+="0"
-        }
-        lastColor=totalG;
-    }
     for(var i=0; i<data.length; i+=4){
         data[i] = totalR;
         data[i+1] = totalG;
