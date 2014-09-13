@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>pixi.js example 1</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+                #count {
+                        position:relative;
+                        top:50%;
+                        left:50%;
+                        font-size:24px;
+                }
+                 #data {
+                        position:relative;
+                        top:70%;
+                        left:50%;
+                        font-size:24px;
+                }
+	</style>
+
+</head>
+    <body>
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="snap">Snap Photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <canvas id="canvas2" width="640" height="480"></canvas>
+        <div id="count"></div>
+        <div id="bin"></div>
+        <script src="camera.js"></script>
+        <script src="analyze.js"></script>
+    </body>
+</html>
